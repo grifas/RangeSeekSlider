@@ -459,11 +459,10 @@ import UIKit
     }
 
     private func updateLineHeight() {
-        let barSidePadding: CGFloat = 16.0
         let yMiddle: CGFloat = frame.height / 2.0
-        let lineLeftSide: CGPoint = CGPoint(x: barSidePadding, y: yMiddle)
-        let lineRightSide: CGPoint = CGPoint(x: frame.width - barSidePadding,
-                                             y: yMiddle)
+        let lineLeftSide: CGPoint = CGPoint(x: 0, y: yMiddle)
+        let lineRightSide: CGPoint = CGPoint(x: frame.width, y: yMiddle)
+
         sliderLine.frame = CGRect(x: lineLeftSide.x,
                                   y: lineLeftSide.y,
                                   width: lineRightSide.x - lineLeftSide.x,
